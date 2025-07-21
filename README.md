@@ -73,3 +73,11 @@ yarn add global-input-tracker
 ### 🛠 TypeScript Friendly
   - Auto-generated TypeScript types
   - Easy to use in both JavaScript and TypeScript environments
+
+
+## 🧪 Run Example
+To test the module locally with an example script:
+
+```
+node examples/main.mjs
+```
