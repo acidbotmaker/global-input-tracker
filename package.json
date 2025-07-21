@@ -1,5 +1,5 @@
 {
-  "name": "mouse-tracker-node-js",
+  "name": "global-input-tracker",
   "version": "1.0.0",
   "description": "Cross-platform global mouse and keyboard event tracker for Node.js, built with Rust and powered by napi-rs. Detect system-wide key presses and mouse movements in real time.",
   "main": "index.js",
@@ -27,7 +27,7 @@
     "index.js"
   ],
   "napi": {
-    "binaryName": "mouse-tracker-node-js",
+    "binaryName": "global-input-tracker",
     "targets": [
       "x86_64-apple-darwin",
       "x86_64-unknown-linux-gnu",
