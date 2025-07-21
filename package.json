@@ -108,9 +108,9 @@
   },
   "packageManager": "yarn@4.9.2",
   "optionalDependencies": {
-    "global-input-tracker-darwin-x64": "1.0.0",
-    "global-input-tracker-linux-x64-gnu": "1.0.0",
-    "global-input-tracker-linux-x64-musl": "1.0.0",
-    "global-input-tracker-freebsd-x64": "1.0.0"
+    "global-input-tracker-darwin-x64": "1.0.1",
+    "global-input-tracker-linux-x64-gnu": "1.0.1",
+    "global-input-tracker-linux-x64-musl": "1.0.1",
+    "global-input-tracker-freebsd-x64": "1.0.1"
   }
 }

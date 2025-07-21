@@ -7,4 +7,4 @@ export interface InputEvent {
   y?: number
 }
 
-export declare function startRootListener(callback: ((err: Error | null, arg: InputEvent) => any)): void
+export declare function startRootListener(callback: (err: Error | null, arg: InputEvent) => any): void
