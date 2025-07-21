@@ -1,4 +1,4 @@
-import { startRootListener } from './index.js'
+import { startRootListener } from '../index.js'
 
 startRootListener((err, value) => {
     if(!!err){
