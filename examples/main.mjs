@@ -1,7 +1,7 @@
 import { startRootListener } from '../index.js'
 
 startRootListener((err, value) => {
-    if(!!err){
+    if(err){
         console.log("received error, break now!");
         return;
     }
