@@ -6,7 +6,7 @@ use napi::{
 };
 use napi_derive::napi;
 use rdev::{listen, Event, EventType};
-use std::{sync::Arc, thread};
+use std::{sync::Arc, thread, time::Duration};
 
 mod types;
 use types::InputEvent;
@@ -57,6 +57,8 @@ pub fn start_root_listener(callback: ThreadsafeFunction<InputEvent>) -> Result<(
     if let Err(e) = listen(send_event) {
       eprintln!("Error in rdev listener: {:?}", e);
     }
+
+    thread::sleep(Duration::from_millis(16));
   });
 
   Ok(())
