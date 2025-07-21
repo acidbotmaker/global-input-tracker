@@ -1,6 +1,6 @@
 {
   "name": "global-input-tracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cross-platform global mouse and keyboard event tracker for Node.js, built with Rust and powered by napi-rs. Detect system-wide key presses and mouse movements in real time.",
   "main": "index.js",
   "repository": "git@github.com:napi-rs/package-template.git",
