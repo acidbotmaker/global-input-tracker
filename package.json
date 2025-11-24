@@ -1,6 +1,6 @@
 {
   "name": "global-input-tracker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cross-platform global mouse and keyboard event tracker for Node.js, built with Rust and powered by napi-rs. Detect system-wide key presses and mouse movements in real time.",
   "main": "index.js",
   "repository": "git@github.com:acidbotmaker/global-input-tracker.git",
@@ -26,15 +26,6 @@
     "index.d.ts",
     "index.js"
   ],
-  "napi": {
-    "binaryName": "global-input-tracker",
-    "targets": [
-      "x86_64-apple-darwin",
-      "x86_64-unknown-linux-gnu",
-      "x86_64-unknown-linux-musl",
-      "x86_64-unknown-freebsd"
-    ]
-  },
   "engines": {
     "node": ">= 12.22.0 < 13 || >= 14.17.0 < 15 || >= 15.12.0 < 16 || >= 16.0.0"
   },
@@ -44,7 +35,6 @@
   },
   "scripts": {
     "artifacts": "napi artifacts",
-    "bench": "node --import @oxc-node/core/register benchmark/bench.ts",
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
     "format": "run-p format:prettier format:rs format:toml",
@@ -60,7 +50,7 @@
   "devDependencies": {
     "@emnapi/core": "^1.4.3",
     "@emnapi/runtime": "^1.4.3",
-    "@napi-rs/cli": "^3.0.0",
+    "@napi-rs/cli": "^3.4.1",
     "@oxc-node/core": "^0.0.29",
     "@taplo/cli": "^0.7.0",
     "@tybys/wasm-util": "^0.10.0",
@@ -106,11 +96,5 @@
     "singleQuote": true,
     "arrowParens": "always"
   },
-  "packageManager": "yarn@4.9.2",
-  "optionalDependencies": {
-    "global-input-tracker-darwin-x64": "1.0.0",
-    "global-input-tracker-linux-x64-gnu": "1.0.0",
-    "global-input-tracker-linux-x64-musl": "1.0.0",
-    "global-input-tracker-freebsd-x64": "1.0.0"
-  }
+  "packageManager": "yarn@4.9.2"
 }
