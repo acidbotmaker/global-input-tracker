@@ -57,8 +57,6 @@ pub fn start_root_listener(callback: ThreadsafeFunction<InputEvent>) -> Result<(
     if let Err(e) = listen(send_event) {
       eprintln!("Error in rdev listener: {:?}", e);
     }
-  });
-
 
     thread::sleep(Duration::from_millis(16));
   });
