@@ -2,7 +2,7 @@
   "name": "global-input-tracker",
   "version": "1.0.2",
   "description": "Cross-platform global mouse and keyboard event tracker for Node.js, built with Rust and powered by napi-rs. Detect system-wide key presses and mouse movements in real time.",
-  "main": "index.js",
+  "main": "loader.js",
   "repository": "git@github.com:acidbotmaker/global-input-tracker.git",
   "license": "MIT",
   "keywords": [
@@ -24,7 +24,9 @@
   ],
   "files": [
     "index.d.ts",
-    "index.js"
+    "index.js",
+    "loader.js",
+    "dist/**/*"
   ],
   "engines": {
     "node": ">= 12.22.0 < 13 || >= 14.17.0 < 15 || >= 15.12.0 < 16 || >= 16.0.0"
